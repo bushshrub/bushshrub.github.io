@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <style>
+        body {
+            font-size: 20pt;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: #fdfdfd;
+            }
+            a {
+                color: #ffe666;
+                text-decoration: none;
+            }
+            a:hover {
+                background: #424242;
+                color: #fdfdfd;
+                text-decoration: underline;
+            }
+        }
+    </style>
+</head>
+<body>
+    {{ content }}
+</body>
+</html>
+
