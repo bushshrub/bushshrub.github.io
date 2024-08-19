@@ -1,137 +1,118 @@
 ---
+layout: mathjax-page
 title: Gallian Typos 10th edition
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Gallian Typos 10th edition</title>
-    <script type="application/javascript">
-    MathJax = {      
-
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
-        macros: {
-          paren: ["\\left(#1\\right)", 1],
-          abs: ["\\left| #1 \\right|", 1],
-          inv: "^{-1}",
-          gen: ["\\left\\langle #1 \\right\\rangle", 1]
-        }
-      }
-    };
-    </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-    
-  </head>
-  <body>
-    <h1>
-      List of typos found in contemporary abstract algebra, 10th edition.
-    </h1>
-    <ul>
-        <li>p78 ch 4 example 4, instead of $\langle 1 \rangle = \langle 1 \rangle$, we should have $\langle 1 \rangle = \{ 1 \}$</li>
-      <li>p131 Ch 6 Ex 6 In step 2, change {$MAM = MBA\inv$} to $MAM = MBM\inv$</li>
-      <li>p132 Ch 6 Thm 6.1 Part 7, change {$G$ and $G$} to $G$ and $\overline{G}$</li>
-      <li>p138 Ch 6 Thm 6.4 at the end with the $T(\alpha
+<h1>
+  List of typos found in contemporary abstract algebra, 10th edition.
+</h1>
+<ul>
+  <li>p78 ch 4 example 4, instead of $\langle 1 \rangle = \langle 1 \rangle$, we should have $\langle 1 \rangle = \{ 1
+    \}$</li>
+  <li>p131 Ch 6 Ex 6 In step 2, change {$MAM = MBA\inv$} to $MAM = MBM\inv$</li>
+  <li>p132 Ch 6 Thm 6.1 Part 7, change {$G$ and $G$} to $G$ and $\overline{G}$</li>
+  <li>p138 Ch 6 Thm 6.4 at the end with the $T(\alpha
     \beta)$ stuff, at the underbrace, change it to $\beta(1)$ times.
     Specifically $\underbrace{\alpha(1 + 1 + \cdots + 1)}_{\beta(1)}$ becomes
     $\underbrace{\alpha(1 + 1 + \cdots + 1)}_{\beta(1) \text{ times}}$ (Fixing
     the other one is left as an exercise)</li>
-    <li>p165 ch 7 ex 32 On the last line, change
-      "or order 2" to "of order 2".</li>
-      <li>
-        p187 ch 8 ex 39 On the first line, $G$ should
-        be $\set{3^m 6^n \mid m, n \in Z}$ instead of $\set{3^m 6^m \mid m, n \in
-        Z}$. Similar issue with the last line.
-      </li>
-      <li>
-        p187 ch8 ex 40 There is a missing bracket.
-        The corrected bit should look like $\abs{\paren{a_1, a_2, \dots, a_n}} =
-        \infty$
-      </li>
-      <li>
-        <b>p221 ch 10 thm 10.1</b> On point 2, add in the
-        missing brace. It should look like $\phi\paren{g^n} = \paren{\phi(g)}^n$
-        instead.
-      </li>
-      <li>
-        <b>p221 ch 10 thm 10.1</b> At the beginning of the
-        proof of property 3, insert "Let $\overline e$ be the identity of $\overline
-        G$.
-      </li>
-      <li>
-        <b>p221 ch 10 thm 10.1</b> At the line "imply that $e
+  <li>p165 ch 7 ex 32 On the last line, change
+    "or order 2" to "of order 2".</li>
+  <li>
+    p187 ch 8 ex 39 On the first line, $G$ should
+    be $\set{3^m 6^n \mid m, n \in Z}$ instead of $\set{3^m 6^m \mid m, n \in
+    Z}$. Similar issue with the last line.
+  </li>
+  <li>
+    p187 ch8 ex 40 There is a missing bracket.
+    The corrected bit should look like $\abs{\paren{a_1, a_2, \dots, a_n}} =
+    \infty$
+  </li>
+  <li>
+    <b>p221 ch 10 thm 10.1</b> On point 2, add in the
+    missing brace. It should look like $\phi\paren{g^n} = \paren{\phi(g)}^n$
+    instead.
+  </li>
+  <li>
+    <b>p221 ch 10 thm 10.1</b> At the beginning of the
+    proof of property 3, insert "Let $\overline e$ be the identity of $\overline
+    G$.
+  </li>
+  <li>
+    <b>p221 ch 10 thm 10.1</b> At the line "imply that $e
     = \phi\paren e = \phi\paren{g^n} = \paren{\phi(g)}^n$", add an overline over
     the $e$ at the start to look like:
     \[ \overline e = \phi\paren e = \phi\paren{g^n} = \paren{\phi(g)}^n \]
-      </li>
-      <li>
-        <b>p223 ch 10 ex 8</b> \[
-        \operatorname{sgn}\paren\sigma = \begin{cases}
-            +1 &\text{if $\sigma$ is an even permutation} \\
-            -1 &\text{if $\sigma$ is an even permutation}
-        \end{cases}
-        \]
-    
-    Change <b>the second even</b> to odd.
-      </li>
-      <li>
-        <b>p247 ch11 lemma 2</b> At the line "Since $b$ was
-        chosen to have smallest order such that $b \in \gen a$", change it to $b
-        \notin \gen a$. 
-      </li>
-      <li>
-        <b>p247 ch 11 lemma 2</b> At the line "For if $x \in \gen
-        a \cap K$, then $\overline x \in \gen{\overline a} \cap \overline K =
-        \set{\overline e} = ${$\gen b$}", change $\gen b$ to $\{\gen b\}$
-      </li>
-      <li>
-        <b>p249 ch 11 lemma 4</b> At the line "Since ($n' = M'$)"
-        change the $M'$ to $m'$
-      </li>
-      <li>
-        <b>p262 ch 12 ex 20</b> Change $R_0 \subset R_1
-        \subset R_2 \cdots$ to $R_0 \supset R_1 \supset R_2 \cdots$
-      </li>
-      <li>
-        <b>p274 ch 13 exercises</b> Exercises 15 and 16 are
-        duplicated (Chapter 12 Exercises 30 and 31) respectively
-      </li>
-      <li>
-        <b>p289 ch 14 ex 41</b>  Change "communitive" to
-        "commutative"
-      </li>
-      <li>
-        <b>p307 ex 50</b> If $R$ is a field prove the mapping is an isomorphism. Without the assumption that $R$ is finite, it is impossible.
-        See <a href="https://en.wikipedia.org/wiki/Frobenius_endomorphism">Wikipedia</a> and <a href="https://math.stackexchange.com/questions/4449239/example-of-a-field-of-characteristic-p-in-which-the-frobenius-endomorphism-fails#:~:text=Let%20F%20be%20a%20field,it%20is%20a%20field%20homomorphism.">Math StackExchange</a>
-      <li>
-        <b>p307 ex 53a</b> Change $\phi -1 (A)$ to $\phi\inv(A)$
-      </li>
-      <li>
-        <b>p 320 ch 16 ex 14</b> Change "the converse is to not
-        true" to "the converse is not true"
-      </li>
-      <li>
-        <b>p 321 ch 16 ex 29</b> Change "give an example of be a
-        commutative ring" to "give an example of a commutative ring".
-      </li>
+  </li>
+  <li>
+    <b>p223 ch 10 ex 8</b> \[
+    \operatorname{sgn}\paren\sigma = \begin{cases}
+    +1 &\text{if $\sigma$ is an even permutation} \\
+    -1 &\text{if $\sigma$ is an even permutation}
+    \end{cases}
+    \]
 
-      <li>
-        <b>p 344 ch 18 example 1</b> "so that $1 + \sqrt{-3}$ divides $2 \cdot 2$" add in the missing word "means": "so that <b>means</b> $1 + \sqrt{-3}$ divides $2 \cdot 2$"
-      </li>
-      <li>
-        <b>p 353 ch 18 example 4</b> Change $p_2$ to $p^2$. See Theorem 16.4 for Eisenstein's Criterion.
-      </li>
-      <li>
-        <b>p 367 ch 19 line 19</b> Change $-1 + \langle x^2 = 1 \rangle$ to $-1 + \langle x^2 + 1 \rangle$. 
-      </li>
-      
-    </ul>
-    <h2>possible improvements</h2>
-    <ul>
-      <li>
-        <b>p 326 example 3</b> "Since 1 is the only divisor of 40 that is congruent to 1 modulo 5"... Note that we only should be considering divisors of 40/5 by Sylow's 3rd Theorem.
-      </li>
-    </ul>
-  </body>
+    Change <b>the second even</b> to odd.
+  </li>
+  <li>
+    <b>p247 ch11 lemma 2</b> At the line "Since $b$ was
+    chosen to have smallest order such that $b \in \gen a$", change it to $b
+    \notin \gen a$.
+  </li>
+  <li>
+    <b>p247 ch 11 lemma 2</b> At the line "For if $x \in \gen
+    a \cap K$, then $\overline x \in \gen{\overline a} \cap \overline K =
+    \set{\overline e} = ${$\gen b$}", change $\gen b$ to $\{\gen b\}$
+  </li>
+  <li>
+    <b>p249 ch 11 lemma 4</b> At the line "Since ($n' = M'$)"
+    change the $M'$ to $m'$
+  </li>
+  <li>
+    <b>p262 ch 12 ex 20</b> Change $R_0 \subset R_1
+    \subset R_2 \cdots$ to $R_0 \supset R_1 \supset R_2 \cdots$
+  </li>
+  <li>
+    <b>p274 ch 13 exercises</b> Exercises 15 and 16 are
+    duplicated (Chapter 12 Exercises 30 and 31) respectively
+  </li>
+  <li>
+    <b>p289 ch 14 ex 41</b> Change "communitive" to
+    "commutative"
+  </li>
+  <li>
+    <b>p307 ex 50</b> If $R$ is a field prove the mapping is an isomorphism. Without the assumption that $R$ is finite,
+    it is impossible.
+    See <a href="https://en.wikipedia.org/wiki/Frobenius_endomorphism">Wikipedia</a> and <a
+      href="https://math.stackexchange.com/questions/4449239/example-of-a-field-of-characteristic-p-in-which-the-frobenius-endomorphism-fails#:~:text=Let%20F%20be%20a%20field,it%20is%20a%20field%20homomorphism.">Math
+      StackExchange</a>
+  <li>
+    <b>p307 ex 53a</b> Change $\phi -1 (A)$ to $\phi\inv(A)$
+  </li>
+  <li>
+    <b>p 320 ch 16 ex 14</b> Change "the converse is to not
+    true" to "the converse is not true"
+  </li>
+  <li>
+    <b>p 321 ch 16 ex 29</b> Change "give an example of be a
+    commutative ring" to "give an example of a commutative ring".
+  </li>
+
+  <li>
+    <b>p 344 ch 18 example 1</b> "so that $1 + \sqrt{-3}$ divides $2 \cdot 2$" add in the missing word "means": "so that
+    <b>means</b> $1 + \sqrt{-3}$ divides $2 \cdot 2$"
+  </li>
+  <li>
+    <b>p 353 ch 18 example 4</b> Change $p_2$ to $p^2$. See Theorem 16.4 for Eisenstein's Criterion.
+  </li>
+  <li>
+    <b>p 367 ch 19 line 19</b> Change $-1 + \langle x^2 = 1 \rangle$ to $-1 + \langle x^2 + 1 \rangle$.
+  </li>
+
+</ul>
+<h2>possible improvements</h2>
+<ul>
+  <li>
+    <b>p 326 example 3</b> "Since 1 is the only divisor of 40 that is congruent to 1 modulo 5"... Note that we only
+    should be considering divisors of 40/5 by Sylow's 3rd Theorem.
+  </li>
+</ul>
